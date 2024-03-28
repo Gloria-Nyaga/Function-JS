@@ -12,21 +12,24 @@ countries()
 //Question 2
 //Using JS functions and an array of numbers, return positive if an element within the array is positive, negative if an element is negative, else zero
 function numbers() {
-    let arr =arr.forEach(element => {
-       if (element > 0) {
-         console.log("positive");
+    let arr =arr.forEach(number => {
 
-       } else if (element < 0) {
+       if (number > 0) {
+         console.log("positive");
+       } 
+
+       else if (number < 0) {
          console.log("negative");
        } 
        
-       else {
+       else if(number==0) {
          console.log("zero");
         }
 
     });
 
    }
+
 
 
    //Question 3
@@ -63,7 +66,7 @@ function multiply(numbers) {
      const lastTwo = arr.slice(-2).map(item => item + 5);
 
      const newArr = firstFour.concat(lastTwo);
-     
+
      console.log(newArr);
    }
    changeArray2([10, 20, 30, 40, 50, 60]);
